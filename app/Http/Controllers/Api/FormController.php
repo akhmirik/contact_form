@@ -12,10 +12,8 @@ class FormController extends Controller
 {
     /**
      * get all data from FORM
-     *
-     * @return array
      */
-    public function index(): array
+    public function index()
     {
         return Form::latest()->paginate(10);
     }
